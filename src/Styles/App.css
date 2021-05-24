@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&display=swap");
+.app h1 {
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-comp {
+  height: 500px;
+  width: 370px;
+  position: absolute;
+  background-color: #dadafb;
+  color: #272323;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 2rem 50px 0px grey;
+          box-shadow: 0px 2rem 50px 0px grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top-comp {
+  height: 15%;
+  width: 100%;
+  font-family: 'Indie Flower', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  border-radius: 14px;
+  background-color: #dadafb;
+  color: #a10a0a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.name-comp {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.name-comp .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.name-comp .name .input {
+  height: 2rem;
+  width: 65%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid green;
+  background: transparent;
+  cursor: text;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation: slider 0.2s both;
+          animation: slider 0.2s both;
+}
+
+.name-comp .name .input:focus {
+  border-bottom: 2.5px solid black;
+}
+
+.name-comp .name h4 {
+  color: #6d260a;
+}
+
+.name-comp .calculate {
+  width: 7rem;
+  height: 2rem;
+  background-color: #ff2400;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
+  -webkit-box-shadow: 1px 3px 2px 1px #1a1a1a;
+          box-shadow: 1px 3px 2px 1px #1a1a1a;
+}
+
+.name-comp .calculate:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.name-comp .calculate:hover {
+  cursor: pointer;
+  background-color: #fa8072;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.loading-comp {
+  height: 6%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading-comp .loading-bar {
+  width: 90%;
+  height: 100%;
+  background-color: #E0115F;
+  border-radius: 3rem;
+}
+/*# sourceMappingURL=App.css.map */

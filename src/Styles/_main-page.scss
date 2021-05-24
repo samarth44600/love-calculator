@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-comp{
+    height:500px;
+    width:370px;
+    position:absolute;
+    background-color: #dadafb;
+    color:rgb(39, 35, 35);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2rem 50px 0px grey;
+}

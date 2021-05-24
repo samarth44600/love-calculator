@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-comp{
+    height: 15%;
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-radius: 14px;
+    background-color: #dadafb;
+    color:rgb(161, 10, 10);
+}

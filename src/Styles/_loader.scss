@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loading-comp {
+  height: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading-bar {
+    width: 90%;
+    height: 100%;
+    background-color: #E0115F;
+    border-radius: 3rem;
+  }
+}
