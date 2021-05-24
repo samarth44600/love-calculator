@@ -1,7 +1,5 @@
-import React from "react";
-//style
+import React, { useEffect } from "react";
 import "./Styles/App.css";
-
 //component
 import Main from "./Components/Main-page";
 
