@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-around;
 
-
     .input {
       height: 2rem;
       width: 65%;
@@ -31,12 +30,10 @@
       &:focus {
         border-bottom: 2.5px solid black;
       }
-
-
     }
 
-    h4{
-      color:#6d260a;
+    h4 {
+      color: #6d260a;
     }
   }
   .calculate {
