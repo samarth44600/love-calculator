@@ -17,3 +17,20 @@ export const formReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export const errorReducer = (state = { nameError: false }, action) => {
+  switch (action.type) {
+    case "ERROR":
+      return {
+        ...state,
+        nameError: true,
+      };
+    case "NO_ERROR":
+      return {
+        ...state,
+        nameError: false,
+      };
+    default:
+      return state;
+  }
+};
