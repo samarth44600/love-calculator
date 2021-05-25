@@ -1,10 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const Loader = () => {
-  const percentage = useSelector((state) => state.form.percentage);
   const progress = useRef();
-  progress.current.style.width = percentage;
+  const percentage = useSelector((state) => state.form.percentage);
+  useEffect(() => {
+    progress.current.style.width = percentage;
+    console.log(progress.current);
+  }, [percentage]);
   return (
     <div className="loading-comp">
       <div className="loading-bar">
