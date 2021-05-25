@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Names from "./Names";
 import Loader from "./Loader";
+import Error from "./Error-msg";
 
 const Main = () => {
   return (
@@ -9,6 +10,7 @@ const Main = () => {
       <Header />
       <Names />
       <Loader />
+      <Error />
     </div>
   );
 };
