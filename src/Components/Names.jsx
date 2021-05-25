@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { calculate } from "../redux/actions/action";
 
 const Names = () => {
@@ -14,7 +14,11 @@ const Names = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submitted");
+    if(!names.partner1 || !names.partner2 || names.partner1.length > 30 || names.partner2.length > 30 || names.partner1.length < 2 || names.partner2.length < 2){
+      console.log('Names must be valid and 3-30 characters long.');
+      return;
+    }
+    
     dispatch(calculate(names));
   };
 
