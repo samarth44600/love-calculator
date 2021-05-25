@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { calculate } from "../redux/actions/action";
-import Error from './Error-msg';
-
+import { calculate, setError, noError } from "../redux/actions/action";
 const Names = () => {
   const [names, setNames] = useState({
     partner1: "",
@@ -15,12 +13,21 @@ const Names = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!names.partner1 || !names.partner2 || names.partner1.length > 30 || names.partner2.length > 30 || names.partner1.length < 2 || names.partner2.length < 2){
-      console.log('Names must be valid and 3-30 characters long.');
-      <Error />
+    if (
+      !names.partner1 ||
+      !names.partner2 ||
+      names.partner1.length > 30 ||
+      names.partner2.length > 30 ||
+      names.partner1.length < 2 ||
+      names.partner2.length < 2
+    ) {
+      console.log("Names must be valid and 3-30 characters long.");
+      dispatch(setError());
+
+      // <Error />;  WTF is this bro ?
       return;
     }
-    
+
     dispatch(calculate(names));
   };
 

@@ -21,3 +21,15 @@ export const calculate_success = (data) => {
     payload: data,
   };
 };
+
+export const setError = () => {
+  return {
+    type: "ERROR",
+  };
+};
+
+export const noError = () => {
+  return {
+    type: "NO_ERROR",
+  };
+};
