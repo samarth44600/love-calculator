@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { calculate } from "../redux/actions/action";
+import Error from './Error-msg';
 
 const Names = () => {
   const [names, setNames] = useState({
@@ -16,6 +17,7 @@ const Names = () => {
     e.preventDefault();
     if(!names.partner1 || !names.partner2 || names.partner1.length > 30 || names.partner2.length > 30 || names.partner1.length < 2 || names.partner2.length < 2){
       console.log('Names must be valid and 3-30 characters long.');
+      <Error />
       return;
     }
     
